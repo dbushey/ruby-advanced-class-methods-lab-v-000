@@ -43,8 +43,11 @@ class Song
     @@all.sort_by(&:name)
   end
 
-  def self.from_filename
-
+  def self.from_filename(song_file)
+    #file ex: ("Taylor Swift - Blank Space.mp3")
+    arr = song_file.split("-")
+    artist_name = arr[0]
+    song = arr[1]
   end
 
 
