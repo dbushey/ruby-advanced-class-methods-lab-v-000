@@ -47,7 +47,9 @@ class Song
     #file ex: ("Taylor Swift - Blank Space.mp3")
     arr = song_file.split("-")
     artist_name = arr[0]
-    song = arr[1]
+    song_file = arr[1].split(".")
+    song = song_file[0]
+    
   end
 
 
