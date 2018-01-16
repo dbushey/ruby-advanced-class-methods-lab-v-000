@@ -45,7 +45,7 @@ class Song
 
   def self.new_from_filename(song_file)
     #file ex: ("Taylor Swift - Blank Space.mp3")
-    arr = song_file.split("-")
+    arr = song_file.split(" - ")
     artist_name = arr[0]
     song_file = arr[1].split(".")
     name = song_file[0]
