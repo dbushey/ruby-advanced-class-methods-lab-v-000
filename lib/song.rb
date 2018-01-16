@@ -48,12 +48,11 @@ class Song
     arr = song_file.split("-")
     artist_name = arr[0]
     song_file = arr[1].split(".")
-    song_name = song_file[0]
+    name = song_file[0]
     song = Song.new
-  person.name = name
-  person.age = age
-  person.company = company
-  person
+    song.name = name
+    song.artist_name = artist_name
+    song
 
   end
 
