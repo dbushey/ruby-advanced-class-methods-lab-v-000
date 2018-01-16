@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -38,7 +40,7 @@ class Song
     if self.find_by_name(name) == nil
       self.create_by_name(name)
     end
-      self.name
+      self
   end
 
 
