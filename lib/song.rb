@@ -43,5 +43,9 @@ class Song
     @@all.sort_by(&:name)
   end
 
+  def self.from_filename
+
+  end
+
 
 end
